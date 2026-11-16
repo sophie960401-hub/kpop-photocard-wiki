@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>收藏基礎 | 小卡收藏 Wiki</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+  <!-- 手機版頂部列 -->
+  <header class="md:hidden sticky top-0 z-30 flex items-center justify-between border-b border-fuchsia-50 bg-white px-4 py-3">
+    <a href="../index.html" class="font-bold text-fuchsia-600">小卡收藏 Wiki</a>
+    <button id="menu-btn" type="button" aria-controls="sidebar" aria-expanded="false"
+            class="rounded-xl border border-fuchsia-600 px-3 py-1 text-sm text-fuchsia-600">選單</button>
+  </header>
+  <div id="overlay" class="fixed inset-0 z-30 hidden bg-slate-800/40 md:hidden"></div>
+
+  <!-- 側邊欄 -->
+  <aside id="sidebar" class="fixed inset-y-0 left-0 z-40 w-64 -translate-x-full overflow-y-auto border-r border-fuchsia-50 bg-white p-4 transition-transform md:translate-x-0">
+    <a href="../index.html" class="mb-4 block px-3 text-lg font-bold text-fuchsia-600">小卡收藏 Wiki</a>
+    <nav aria-label="站內導覽">
+      <ul class="space-y-1">
+          <li><a href="../index.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">首頁</a></li>
+          <li><a href="basics.html" aria-current="page" class="block rounded-xl px-3 py-2 text-sm bg-fuchsia-50 text-fuchsia-600 font-semibold">收藏基礎</a></li>
+          <li><a href="sleeves.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">卡膜與卡套</a></li>
+          <li><a href="binders.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">A4／A5 收集冊</a></li>
+          <li><a href="display-case.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">壓克力展示櫃</a></li>
+          <li><a href="shipping.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">賣貨便包裝與寄送</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- 內容區 -->
+  <main class="md:ml-64">
+    <div class="mx-auto max-w-3xl px-4 py-8 md:py-12 break-words">
+      <h1 class="text-3xl font-bold leading-snug text-slate-800">收藏基礎</h1>
+
+      <div class="mt-6 rounded-xl bg-fuchsia-50 p-4 shadow-sm">
+        <p class="font-semibold text-fuchsia-600">一句話重點</p>
+        <p class="mt-1">小卡（photocard）怕光、怕潮、怕壓、怕油：先把這四件事顧好，就已經贏過大多數新手。</p>
+      </div>
+      
+      <h2 class="mt-10 mb-3 text-xl font-bold text-slate-800">小卡從哪裡來</h2>
+      <p class="my-3 leading-relaxed">小卡（photocard）是 K-pop 周邊中最常被收藏的項目，取得管道大致有幾種：</p>
+      <ul class="list-disc space-y-2 pl-6"><li><strong>專輯內附小卡</strong>：多為隨機附贈，因此才有「換卡」文化。</li><li><strong>通路特典（benefit）</strong>：向特定通路購買專輯時附贈的限定小卡。</li><li><strong>官方周邊與活動</strong>：演唱會、粉絲見面會或官方商店販售或贈送。</li><li><strong>二手交易／交換</strong>：粉絲之間的買賣與交換，風險也最高，請見「賣貨便包裝與寄送」。</li></ul>
+      <h2 class="mt-10 mb-3 text-xl font-bold text-slate-800">保存的四個敵人</h2>
+      <h3 class="mt-6 mb-2 text-lg font-semibold text-slate-800">光線</h3>
+      <p class="my-3 leading-relaxed">長時間日照或強光會讓卡面褪色、泛黃。收藏處請避開窗邊與直射光。</p>
+      <h3 class="mt-6 mb-2 text-lg font-semibold text-slate-800">濕氣</h3>
+      <p class="my-3 leading-relaxed">台灣氣候潮濕，卡面容易黏連、發霉或起波浪。可搭配防潮箱或乾燥劑，並定期檢查。</p>
+      <h3 class="mt-6 mb-2 text-lg font-semibold text-slate-800">壓力與彎折</h3>
+      <p class="my-3 leading-relaxed">小卡很薄，疊放過重或硬塞進太緊的內頁都可能壓出折痕、白邊。</p>
+      <h3 class="mt-6 mb-2 text-lg font-semibold text-slate-800">指紋與油脂</h3>
+      <p class="my-3 leading-relaxed">直接用手摸卡面會留下指紋與油脂，尤其是亮面與特殊工藝卡。拿取時盡量捏卡片邊緣。</p>
+      <h2 class="mt-10 mb-3 text-xl font-bold text-slate-800">新手入門順序</h2>
+      <p class="my-3 leading-relaxed">建議依照本站的學習流程，由內往外一層一層保護：</p>
+      <ul class="list-disc space-y-2 pl-6"><li>先用<a class="text-fuchsia-600 underline underline-offset-2" href="sleeves.html">卡膜與卡套</a>保護單張卡片。</li><li>再依需求選擇<a class="text-fuchsia-600 underline underline-offset-2" href="binders.html">收集冊</a>（大量收納）或<a class="text-fuchsia-600 underline underline-offset-2" href="display-case.html">展示櫃</a>（重點展示）。</li></ul>
+
+      <h2 class="mt-10 mb-3 text-xl font-bold text-slate-800">常見錯誤／注意事項</h2>
+      <div class="rounded-xl border border-fuchsia-600 p-4 shadow-sm">
+        <ul class="list-disc space-y-2 pl-6"><li>不要用膠帶、雙面膠或貼紙直接貼在卡面或卡背。</li><li>不要把小卡放在車內、窗邊或其他高溫、日曬的位置。</li><li>不要因為「先收起來再說」就把裸卡直接疊在抽屜裡。</li></ul>
+      </div>
+
+      <h2 class="mt-10 mb-3 text-xl font-bold text-slate-800">延伸閱讀</h2>
+      <ul class="list-disc space-y-1 pl-6"><li><a class="text-fuchsia-600 underline underline-offset-2 hover:text-fuchsia-700" href="sleeves.html">卡膜與卡套</a></li><li><a class="text-fuchsia-600 underline underline-offset-2 hover:text-fuchsia-700" href="binders.html">A4／A5 收集冊</a></li></ul>
+
+      <footer class="mt-12 border-t border-fuchsia-50 pt-4 text-sm text-slate-800/70">
+        最後更新日期：2026-11-16
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    var btn = document.getElementById('menu-btn');
+    var sb = document.getElementById('sidebar');
+    var ov = document.getElementById('overlay');
+    function toggle(open) {
+      sb.classList.toggle('-translate-x-full', !open);
+      ov.classList.toggle('hidden', !open);
+      if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    if (btn) btn.addEventListener('click', function () { toggle(sb.classList.contains('-translate-x-full')); });
+    ov.addEventListener('click', function () { toggle(false); });
+  </script>
+</body>
+</html>

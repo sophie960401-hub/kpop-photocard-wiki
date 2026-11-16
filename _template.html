@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>【頁面標題】 | 小卡收藏 Wiki</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+  <!-- 手機版頂部列 -->
+  <header class="md:hidden sticky top-0 z-30 flex items-center justify-between border-b border-fuchsia-50 bg-white px-4 py-3">
+    <a href="../index.html" class="font-bold text-fuchsia-600">小卡收藏 Wiki</a>
+    <button id="menu-btn" type="button" aria-controls="sidebar" aria-expanded="false"
+            class="rounded-xl border border-fuchsia-600 px-3 py-1 text-sm text-fuchsia-600">選單</button>
+  </header>
+  <div id="overlay" class="fixed inset-0 z-30 hidden bg-slate-800/40 md:hidden"></div>
+
+  <!-- 側邊欄 -->
+  <aside id="sidebar" class="fixed inset-y-0 left-0 z-40 w-64 -translate-x-full overflow-y-auto border-r border-fuchsia-50 bg-white p-4 transition-transform md:translate-x-0">
+    <a href="../index.html" class="mb-4 block px-3 text-lg font-bold text-fuchsia-600">小卡收藏 Wiki</a>
+    <nav aria-label="站內導覽">
+      <ul class="space-y-1">
+          <li><a href="../index.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">首頁</a></li>
+          <li><a href="basics.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">收藏基礎</a></li>
+          <li><a href="sleeves.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">卡膜與卡套</a></li>
+          <li><a href="binders.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">A4／A5 收集冊</a></li>
+          <li><a href="display-case.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">壓克力展示櫃</a></li>
+          <li><a href="shipping.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">賣貨便包裝與寄送</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- 內容區 -->
+  <main class="md:ml-64">
+    <div class="mx-auto max-w-3xl px-4 py-8 md:py-12 break-words">
+      <h1 class="text-3xl font-bold leading-snug text-slate-800">【頁面標題】</h1>
+
+      <div class="mt-6 rounded-xl bg-fuchsia-50 p-4 shadow-sm">
+        <p class="font-semibold text-fuchsia-600">一句話重點</p>
+        <p class="mt-1">【用一句話說明這一頁的重點。】</p>
+      </div>
+      
+      <h2 class="mt-10 mb-3 text-xl font-bold text-slate-800">【小標題 H2】</h2>
+      <p class="my-3 leading-relaxed">【正文段落。專有名詞首次出現請附中英對照，例如：小卡 photocard。】</p>
+      <h3 class="mt-6 mb-2 text-lg font-semibold text-slate-800">【小標題 H3（不可跳級）】</h3>
+      <p class="my-3 leading-relaxed">【正文】</p>
+
+      <h2 class="mt-10 mb-3 text-xl font-bold text-slate-800">常見錯誤／注意事項</h2>
+      <div class="rounded-xl border border-fuchsia-600 p-4 shadow-sm">
+        <ul class="list-disc space-y-2 pl-6"><li>【至少列出一項常見錯誤或注意事項】</li></ul>
+      </div>
+
+      <h2 class="mt-10 mb-3 text-xl font-bold text-slate-800">延伸閱讀</h2>
+      <ul class="list-disc space-y-1 pl-6"><li><a class="text-fuchsia-600 underline underline-offset-2 hover:text-fuchsia-700" href="basics.html">收藏基礎</a></li></ul>
+
+      <footer class="mt-12 border-t border-fuchsia-50 pt-4 text-sm text-slate-800/70">
+        最後更新日期：YYYY-MM-DD
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    var btn = document.getElementById('menu-btn');
+    var sb = document.getElementById('sidebar');
+    var ov = document.getElementById('overlay');
+    function toggle(open) {
+      sb.classList.toggle('-translate-x-full', !open);
+      ov.classList.toggle('hidden', !open);
+      if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    if (btn) btn.addEventListener('click', function () { toggle(sb.classList.contains('-translate-x-full')); });
+    ov.addEventListener('click', function () { toggle(false); });
+  </script>
+</body>
+</html>

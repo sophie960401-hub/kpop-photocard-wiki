@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>K-pop 收藏小卡與保存指南 Wiki</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+  <!-- 手機版頂部列 -->
+  <header class="md:hidden sticky top-0 z-30 flex items-center justify-between border-b border-fuchsia-50 bg-white px-4 py-3">
+    <a href="index.html" class="font-bold text-fuchsia-600">小卡收藏 Wiki</a>
+    <button id="menu-btn" type="button" aria-controls="sidebar" aria-expanded="false"
+            class="rounded-xl border border-fuchsia-600 px-3 py-1 text-sm text-fuchsia-600">選單</button>
+  </header>
+  <div id="overlay" class="fixed inset-0 z-30 hidden bg-slate-800/40 md:hidden"></div>
+
+  <!-- 側邊欄 -->
+  <aside id="sidebar" class="fixed inset-y-0 left-0 z-40 w-64 -translate-x-full overflow-y-auto border-r border-fuchsia-50 bg-white p-4 transition-transform md:translate-x-0">
+    <a href="index.html" class="mb-4 block px-3 text-lg font-bold text-fuchsia-600">小卡收藏 Wiki</a>
+    <nav aria-label="站內導覽">
+      <ul class="space-y-1">
+          <li><a href="index.html" aria-current="page" class="block rounded-xl px-3 py-2 text-sm bg-fuchsia-50 text-fuchsia-600 font-semibold">首頁</a></li>
+          <li><a href="pages/basics.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">收藏基礎</a></li>
+          <li><a href="pages/sleeves.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">卡膜與卡套</a></li>
+          <li><a href="pages/binders.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">A4／A5 收集冊</a></li>
+          <li><a href="pages/display-case.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">壓克力展示櫃</a></li>
+          <li><a href="pages/shipping.html" class="block rounded-xl px-3 py-2 text-sm text-slate-800 hover:bg-fuchsia-50 hover:text-fuchsia-600">賣貨便包裝與寄送</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- 內容區 -->
+  <main class="md:ml-64">
+    <div class="mx-auto max-w-3xl px-4 py-8 md:py-12 break-words">
+      <h1 class="text-3xl font-bold leading-snug text-slate-800">K-pop 收藏小卡與保存指南 Wiki</h1>
+
+      <div class="mt-6 rounded-xl bg-fuchsia-50 p-4 shadow-sm">
+        <p class="font-semibold text-fuchsia-600">一句話重點</p>
+        <p class="mt-1">給剛入坑的粉絲：從收藏基礎到卡套、收集冊、展示櫃，再到賣貨便寄送，一步一步把小卡保存好。</p>
+      </div>
+
+      <h2 class="mt-10 mb-3 text-xl font-bold text-slate-800">這個網站在做什麼</h2>
+      <p class="my-3 leading-relaxed">這是一份整理 K-pop 小卡（photocard）收藏實用知識的 Wiki，目標是結構清晰、好查閱、可以持續擴充。內容依照學習流程排列，建議由上往下閱讀。</p>
+
+      <h2 class="mt-10 mb-3 text-xl font-bold text-slate-800">主題一覽</h2>
+      <div class="grid gap-4 sm:grid-cols-2">
+        <a href="pages/basics.html" class="block rounded-xl border border-fuchsia-50 bg-white p-4 shadow-sm hover:border-fuchsia-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-600">
+          <h3 class="font-semibold text-fuchsia-600">收藏基礎</h3>
+          <p class="mt-1 text-sm">認識小卡的來源，以及怕光、怕潮、怕壓、怕油的保存基本功。</p>
+        </a>
+        <a href="pages/sleeves.html" class="block rounded-xl border border-fuchsia-50 bg-white p-4 shadow-sm hover:border-fuchsia-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-600">
+          <h3 class="font-semibold text-fuchsia-600">卡膜與卡套</h3>
+          <p class="mt-1 text-sm">卡膜、硬卡套與磁吸卡磚怎麼分、怎麼挑、怎麼套。</p>
+        </a>
+        <a href="pages/binders.html" class="block rounded-xl border border-fuchsia-50 bg-white p-4 shadow-sm hover:border-fuchsia-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-600">
+          <h3 class="font-semibold text-fuchsia-600">A4／A5 收集冊</h3>
+          <p class="mt-1 text-sm">A4 與 A5 收集冊的差異，以及內頁與整理方式。</p>
+        </a>
+        <a href="pages/display-case.html" class="block rounded-xl border border-fuchsia-50 bg-white p-4 shadow-sm hover:border-fuchsia-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-600">
+          <h3 class="font-semibold text-fuchsia-600">壓克力展示櫃</h3>
+          <p class="mt-1 text-sm">展示櫃的類型、擺放位置與日常維護。</p>
+        </a>
+        <a href="pages/shipping.html" class="block rounded-xl border border-fuchsia-50 bg-white p-4 shadow-sm hover:border-fuchsia-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-600">
+          <h3 class="font-semibold text-fuchsia-600">賣貨便包裝與寄送</h3>
+          <p class="mt-1 text-sm">賣小卡時的三層包裝、寄件前檢查與交易安全。</p>
+        </a>
+      </div>
+
+      <h2 class="mt-10 mb-3 text-xl font-bold text-slate-800">使用提醒</h2>
+      <div class="rounded-xl border border-fuchsia-600 p-4 shadow-sm">
+        <ul class="list-disc space-y-2 pl-6"><li>價格、尺寸與平台規則若不確定，本站一律寫「以官方最新公告為準」，不自行填數字。</li><li>賣貨便與物流規定可能變動，請以官方為準。</li></ul>
+      </div>
+
+      <footer class="mt-12 border-t border-fuchsia-50 pt-4 text-sm text-slate-800/70">
+        最後更新日期：2026-11-16
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    var btn = document.getElementById('menu-btn');
+    var sb = document.getElementById('sidebar');
+    var ov = document.getElementById('overlay');
+    function toggle(open) {
+      sb.classList.toggle('-translate-x-full', !open);
+      ov.classList.toggle('hidden', !open);
+      if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    if (btn) btn.addEventListener('click', function () { toggle(sb.classList.contains('-translate-x-full')); });
+    ov.addEventListener('click', function () { toggle(false); });
+  </script>
+</body>
+</html>
